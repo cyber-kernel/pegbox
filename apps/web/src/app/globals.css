@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #FFFFFF;
+  --surface: #F6F7FB;        /* page sections, tool tiles */
+  --surface-2: #ECEEF6;      /* hover, chips */
+  --line: #E4E6F0;           /* decorative borders (cards, dividers) */
+  --line-strong: #7A8099;    /* input / control borders (>=3:1 on white) */
+  --ink: #0F1222;            /* main text, 18.6:1 */
+  --muted: #5B6078;          /* secondary text, 6.2:1 */
+  --primary: #6D4AFF;        /* brand, buttons (white text on it = 5.15:1) */
+  --primary-hover: #5B3BE8;
+  --primary-text: #5B3BE8;   /* links / text accent, 6.49:1 */
+  --focus: #0EA5E9;          /* 3px focus ring, always visible */
+  --success-text: #047857;  --success-bg: #ECFDF5;
+  --warning-text: #92400E;  --warning-bg: #FFFBEB;
+  --danger-text: #B91C1C;   --danger-bg: #FEF2F2;
+
+  /* Tool categories: fill (icons/tiles) + text (labels) + tint (tile background) */
+  --cat-audio-fill: #6D4AFF;  --cat-audio-text: #5B3BE8;  --cat-audio-tint: #F1EDFF;
+  --cat-video-fill: #FF6B4A;  --cat-video-text: #C2410C;  --cat-video-tint: #FFF0EC;
+  --cat-image-fill: #10B981;  --cat-image-text: #047857;  --cat-image-tint: #E8FAF3;
+  --cat-text-fill:  #F59E0B;  --cat-text-text:  #92400E;  --cat-text-tint:  #FFF6E0;
+  --cat-dev-fill:   #0EA5E9;  --cat-dev-text:   #0369A1;  --cat-dev-tint:   #E6F6FD;
+  --cat-util-fill:  #0F1222;  --cat-util-text:  #0F1222;  --cat-util-tint:  #ECEEF6;
+
+  --radius-card: 20px;
+  --radius-control: 12px;
+  --radius-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(15,18,34,.04), 0 8px 24px rgba(15,18,34,.06);
+  --shadow-hover: 0 2px 4px rgba(15,18,34,.04), 0 12px 32px rgba(15,18,34,.08);
+
+  --font-heading: 'Sora', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Accessible focus ring */
+*:focus-visible {
+  outline: 3px solid var(--focus) !important;
+  outline-offset: 2px !important;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

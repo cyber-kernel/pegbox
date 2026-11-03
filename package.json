@@ -1,0 +1,26 @@
+{
+  "name": "pegbox",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Pegbox — A pegboard of small browser-native file tools",
+  "scripts": {
+    "predev": "node scripts/gen-registry.mjs",
+    "dev": "pnpm --filter @pegbox/web dev",
+    "prebuild": "node scripts/gen-registry.mjs",
+    "build": "pnpm --filter @pegbox/web build",
+    "check-tools": "node scripts/check-tools.mjs",
+    "new-tool": "node scripts/new-tool.mjs",
+    "build-brand": "node scripts/build-brand.mjs",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.7",
+    "zod": "^3.24.2"
+  },
+  "dependencies": {
+    "@ffmpeg/core": "^0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2"
+  }
+}

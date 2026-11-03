@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200" role="img" aria-label="Pegbox">
+  <rect width="600" height="200" fill="#FFFFFF"/>
+  <g transform="translate(8,8) scale(0.72)">
+    <rect x="46"  y="46"  width="48" height="48" rx="14" fill="#6D4AFF"/>
+    <rect x="104" y="46"  width="48" height="48" rx="14" fill="#FF6B4A"/>
+    <rect x="162" y="46"  width="48" height="48" rx="14" fill="#10B981"/>
+    <rect x="46"  y="104" width="48" height="48" rx="14" fill="#F59E0B"/>
+    <rect x="104" y="104" width="48" height="48" rx="14" fill="#0EA5E9"/>
+    <rect x="162" y="104" width="48" height="48" rx="14" fill="#0F1222"/>
+    <rect x="46"  y="162" width="48" height="48" rx="14" fill="#E9EAF3"/>
+    <rect x="104" y="162" width="48" height="48" rx="14" fill="#E9EAF3"/>
+    <rect x="164" y="164" width="44" height="44" rx="13" fill="none" stroke="#6D4AFF" stroke-width="5" stroke-dasharray="9 8"/>
+    <path d="M186 175 V197 M175 186 H197" stroke="#6D4AFF" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- Wordmark uses Sora 700. In the app render it as live text via next/font; this SVG falls back to system sans if Sora is not installed. -->
+  <text x="200" y="124" font-family="Sora, 'Plus Jakarta Sans', Inter, Arial, sans-serif" font-size="86" font-weight="700" fill="#0F1222" letter-spacing="-2">Peg<tspan fill="#6D4AFF">box</tspan></text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="630" fill="#FFFFFF"/>
+    <rect x="80" y="80" width="56" height="56" rx="14" fill="#6D4AFF"/>
+    <rect x="96" y="96" width="24" height="24" rx="6" fill="#FFFFFF"/>
+    <text x="156" y="122" font-family="system-ui, sans-serif" font-weight="bold" font-size="42" fill="#0F1222">Peg<tspan fill="#6D4AFF">box</tspan></text>
+    <text x="80" y="320" font-family="system-ui, sans-serif" font-weight="bold" font-size="64" fill="#0F1222">Pick a tool. Drop a file. Done.</text>
+    <text x="80" y="380" font-family="system-ui, sans-serif" font-size="28" fill="#5B6078">Browser-native file tools for creators. 100% Free · Zero uploads.</text>
+    <line x1="80" y1="520" x2="1120" y2="520" stroke="#E4E6F0" stroke-width="2"/>
+    <text x="80" y="565" font-family="system-ui, sans-serif" font-weight="600" font-size="20" fill="#0F1222">Runs in your browser · Your files never leave your device</text>
+    <text x="1120" y="565" text-anchor="end" font-family="system-ui, sans-serif" font-weight="600" font-size="20" fill="#6D4AFF">pegbox.vercel.app</text>
+  </svg>

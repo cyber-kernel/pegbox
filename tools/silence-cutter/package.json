@@ -1,0 +1,12 @@
+{
+  "name": "@pegbox/tool-silence-cutter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.ts",
+  "dependencies": {
+    "@pegbox/tool-kit": "workspace:*",
+    "@pegbox/media": "workspace:*"
+  }
+}
+
